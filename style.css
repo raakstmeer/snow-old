@@ -1,0 +1,52 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+}
+
+html{
+  scroll-behavior: smooth !important;
+}
+.scrollStick {
+  background-color: #515566;
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+}
+.collapse {
+  transform-origin: top;
+  transform: scaleY(1);
+  transition: 0.3s;
+}
+
+.alert{
+  border: 1px solid red !important;
+  background-color: rgba(255, 82, 82, 0.202) !important;
+}
+
+/* goto top animation */
+
+@keyframes gotoTop {
+  25%{
+    transform: translateY(5px);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+  75%{
+    transform: translateY(-5px);
+  }
+  100%{
+    transform: translateY(5px);
+  }
+}
+.gototop>a{
+  animation: gotoTop 2s infinite;
+}
+
+/* .forPath{
+  clip-path: polygon(100% 0, 100% 95%, 83% 100%, 67% 94%, 48% 99%, 36% 95%, 21% 99%, 13% 96%, 0 100%, 0 0);
+  clip-path: polygon(46% 6%, 61% 0, 80% 6%, 89% 0, 100% 5%, 100% 100%, 0 100%, 0 0, 13% 6%, 28% 0);
+} */
+

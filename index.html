@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./image/favicon_logo.png" type="image/x-icon" />
+  <!-- font awesome file link  -->
+  <link rel="stylesheet" href="./fontawesome/css/all.css" />
+  <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+  <title>ICE ImraN (SNOW)</title>
+  <link rel="stylesheet" href="./dist/output.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- dark mode enabler  -->
+  <div
+    class="darkmode group fixed top-28 left-5 z-50 flex h-10 w-10 cursor-pointer items-center justify-center bg-[#6e6e6e30] p-2 text-[gray] dark:bg-primary dark:text-white">
+    <span><i class="fa-solid fa-gear transition duration-500 group-hover:rotate-180"></i></span>
+  </div>
+  <!-- dark mode enabler end -->
+  <!-- header  -->
+  <header id="header" class="relative">
+    <div class="header bg-primary dark:bg-primary-dark">
+      <div
+        class="bg-slate-700 dark:bg-slate-900 mx-auto flex w-9/12 items-center justify-between xl:w-full xl:justify-around lg:justify-between lg:px-5 md:relative md:justify-between">
+        <!-- logo -->
+        <div class="w-28">
+          <a href="./index.html"><img src="./image/my-logo-with-fire.png" alt="Logo" class="w-full" /></a>
+        </div>
+        <!-- menu  -->
+        <div class="menuList">
+          <ul
+            class="md: right-0 flex items-center justify-between transition md:absolute md:top-20 md:w-full md:origin-top md:scale-0 md:flex-col md:bg-[#6e6e6e30] md:backdrop-blur dark:md:bg-[#00000030]">
+            <li class="md:hover:bg-gray-500 ml-8 transition md:mb-5 md:px-8 md:py-3">
+              <a href="#header" class="text-2xl text-white md:text-tprimary dark:md:text-white">Home</a>
+            </li>
+            <li class="md:hover:bg-gray-500 ml-8 transition md:mb-5 md:px-8 md:py-3">
+              <a href="#workship" class="text-2xl text-white md:text-tprimary dark:md:text-white">Service</a>
+            </li>
+            <li class="md:hover:bg-gray-500 ml-8 transition md:mb-5 md:px-8 md:py-3">
+              <a href="#about" class="text-2xl text-white md:text-tprimary dark:md:text-white">About</a>
+            </li>
+            <li class="md:hover:bg-gray-500 ml-8 transition md:mb-5 md:px-8 md:py-3">
+              <a href="#skill" class="text-2xl text-white md:text-tprimary dark:md:text-white">Skill</a>
+            </li>
+            <li class="md:hover:bg-gray-500 ml-8 transition md:mb-5 md:px-8 md:py-3">
+              <a href="#portfolio" class="text-2xl text-white md:text-tprimary dark:md:text-white">Portfolio</a>
+            </li>
+            <li class="md:hover:bg-gray-500 ml-8 transition md:mb-5 md:px-8 md:py-3">
+              <a href="#contact" class="text-2xl text-white md:text-tprimary dark:md:text-white">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- menuBtn -->
+        <div class="hidden cursor-pointer md:mr-10 md:inline-block md:text-5xl md:text-white sm:mr-2 xs:mr-2">
+          <span id="cross"><i onclick="menuShow(this)" class="fa-solid fa-bars"></i></span>
+        </div>
+        <!-- menuBtn end -->
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+  <!-- features  -->
+  <section>
+    <div class="bg-ice dark:bg-[#1f2235e6]">
+      <div class="mx-auto w-9/12 space-y-5 py-20 lg:w-full lg:px-10 sm:w-full sm:px-3">
+        <div class="socialIcons flex space-x-6 pt-8 text-4xl sm:text-xl">
+          <div class="rotate-0 transition duration-500 hover:rotate-360">
+            <a href="https://www.facebook.com/profile.php?id=100009068730323" target="_blank" style="color: #3b5998"
+              class="min-h-8 min-w-8 bg-white px-4 py-2 align-baseline"><i class="fab fa-facebook"></i></a>
+          </div>
+          <div class="rotate-0 transition duration-500 hover:rotate-360">
+            <a href="https://www.instagram.com/ice_imran/" target="_blank" style="color: #d33e82"
+              class="min-h-8 min-w-8 bg-white px-4 py-2 align-baseline"><i class="fab fa-instagram-square"></i></a>
+          </div>
+          <div class="rotate-0 transition duration-500 hover:rotate-360">
+            <a href="https://twitter.com/AkterRasme" target="_blank" style="color: #55acee"
+              class="min-h-8 min-w-8 bg-white px-4 py-2 align-baseline"><i class="fab fa-twitter-square"></i></a>
+          </div>
+          <div class="rotate-0 transition duration-500 hover:rotate-360">
+            <a href="https://dribbble.com/raakstmeer" target="_blank" style="color: #ea4c89"
+              class="min-h-8 min-w-8 bg-white px-4 py-2 align-baseline"><i class="fab fa-dribbble-square"></i></a>
+          </div>
+          <div class="rotate-0 transition duration-500 hover:rotate-360">
+            <a href="https://www.fiverr.com/raakstmeer" target="_blank" style="color: #ea4335"
+              class="min-h-8 min-w-8 bg-white px-4 py-2 align-baseline"><i class="fab fa-freebsd"></i></a>
+          </div>
+        </div>
+        <div class="featuresTitle space-y-3 py-8">
+          <h1 class="text-7xl font-bold text-tprimary dark:text-white md:text-5xl sm:text-4xl">
+            I am Tushar Imran
+          </h1>
+          <p class="text-2xl text-[#7d7d7d] dark:text-[#dbdbdb] md:text-xl sm:text-xl">
+            I'm professional web-designer and graphics designer
+          </p>
+        </div>
+        <div class="featuresBtn mt-4">
+          <a href="https://github.com/raakstmeer" target="_blank"
+            class="w-10 rounded border-2 border-[#1da1f2] bg-[#1da1f2] px-7 py-3 text-3xl text-white transition hover:bg-white hover:text-[#1da1f2] sm:text-xl"><i
+              class="fab fa-github-square"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- features end -->
+  <!-- my worship  -->
+  <section id="workship">
+    <div class="forPath bg-primary dark:bg-primary-dark">
+      <div class="mx-auto w-9/12 space-y-5 py-20 lg:w-full lg:px-10 sm:w-full sm:px-3">
+        <!-- main title  -->
+        <div class="mainTitle mb-10 space-y-4 text-center text-white">
+          <h1 class="align-super text-5xl">Worship</h1>
+          <p class="align-super text-xl">
+            Here is a description of all the services I offer. Hover for
+            Discription
+          </p>
+        </div>
+        <div class="workShipWrapper grid grid-cols-3 gap-5 lg:grid-cols-2 md:grid-cols-1">
+          <!-- single workship  -->
+          <div class="singleWorkship group relative">
+            <div class="singleWorkshipPicture">
+              <img src="./image/workship/web-programming.jpg" alt="" />
+            </div>
+            <div
+              class="singleWorkshipDetails absolute inset-0 space-y-6 bg-[#3333339c] p-5 text-center text-white opacity-0 backdrop-blur transition duration-200 group-hover:opacity-100 xl:space-y-0 xl:p-1 md:space-y-2 md:p-3">
+              <span class="text-left text-5xl xl:text-3xl lg:text-3xl md:text-5xl sm:text-xl"><i
+                  class="fa-solid fa-code"></i></span>
+              <h1 class="text-5xl xl:text-2xl lg:text-3xl md:text-5xl sm:text-2xl">
+                Web Development
+              </h1>
+              <p class="xl:text-sm lg:text-sm md:pt-8 md:text-xl sm:pt-0 sm:text-sm">
+                I am professional web-developer dreamer. I will learn this
+                service from time to time then I will be able to provide this
+                service
+              </p>
+            </div>
+          </div>
+          <!-- single workship  -->
+          <div class="singleWorkship group relative">
+            <div class="singleWorkshipPicture">
+              <img src="./image/workship/web-designer.jpg" alt="" />
+            </div>
+            <div
+              class="singleWorkshipDetails absolute inset-0 space-y-6 bg-[#3333339c] p-5 text-center text-white opacity-0 backdrop-blur transition duration-200 group-hover:opacity-100 xl:space-y-0 xl:p-1 md:space-y-2 md:p-3">
+              <span class="text-left text-5xl xl:text-3xl lg:text-3xl md:text-5xl sm:text-xl"><i
+                  class="fa-solid fa-wand-magic-sparkles"></i></span>
+              <h1 class="text-5xl xl:text-2xl lg:text-3xl md:text-5xl sm:text-2xl">
+                Web Design
+              </h1>
+              <p class="xl:text-sm lg:text-sm md:pt-8 md:text-xl sm:pt-0 sm:text-sm">
+                I am a professional web-designer. I will create may web page
+                at the time. You can check my portfolio section
+              </p>
+            </div>
+          </div>
+          <!-- single workship  -->
+          <div class="singleWorkship group relative">
+            <div class="singleWorkshipPicture">
+              <img src="./image/workship/video-editing.jpg" alt="" />
+            </div>
+            <div
+              class="singleWorkshipDetails absolute inset-0 space-y-6 bg-[#3333339c] p-5 text-center text-white opacity-0 backdrop-blur transition duration-200 group-hover:opacity-100 xl:space-y-0 xl:p-1 md:space-y-2 md:p-3">
+              <span class="text-left text-5xl xl:text-3xl lg:text-3xl md:text-5xl sm:text-xl"><i
+                  class="fa-solid fa-video"></i></span>
+              <h1 class="text-5xl xl:text-2xl lg:text-3xl md:text-5xl sm:text-2xl">
+                Video Editing
+              </h1>
+              <p class="xl:text-sm lg:text-sm md:pt-8 md:text-xl sm:pt-0 sm:text-sm">
+                Video Editing is my passion. I am learning video editing with
+                web designing. You can hire me for your video editing for
+                cinematic, tutorial, vlog video Etc.
+              </p>
+            </div>
+          </div>
+          <!-- single workship  -->
+          <div class="singleWorkship group relative">
+            <div class="singleWorkshipPicture">
+              <img src="./image/workship/photography.jpg" alt="" />
+            </div>
+            <div
+              class="singleWorkshipDetails absolute inset-0 space-y-6 bg-[#3333339c] p-5 text-center text-white opacity-0 backdrop-blur transition duration-200 group-hover:opacity-100 xl:space-y-0 xl:p-1 md:space-y-2 md:p-3">
+              <span class="text-left text-5xl xl:text-3xl lg:text-3xl md:text-5xl sm:text-xl"><i
+                  class="fa-solid fa-camera-retro"></i></span>
+              <h1 class="text-5xl xl:text-2xl lg:text-3xl md:text-5xl sm:text-2xl">
+                Photography
+              </h1>
+              <p class="xl:text-sm lg:text-sm md:pt-8 md:text-xl sm:pt-0 sm:text-sm">
+                Photography is my another passion. I am learning photography
+                with web designing. You can hire me for your photography for
+                natural specially MACRO shooter Etc.
+              </p>
+            </div>
+          </div>
+          <!-- single workship  -->
+          <div class="singleWorkship group relative">
+            <div class="singleWorkshipPicture">
+              <img src="./image/workship/logodesign.jpg" alt="" />
+            </div>
+            <div
+              class="singleWorkshipDetails absolute inset-0 space-y-6 bg-[#3333339c] p-5 text-center text-white opacity-0 backdrop-blur transition duration-200 group-hover:opacity-100 xl:space-y-0 xl:p-1 md:space-y-2 md:p-3">
+              <span class="text-left text-5xl xl:text-3xl lg:text-3xl md:text-5xl sm:text-xl"><i
+                  class="fa-solid fa-hat-wizard"></i></span>
+              <h1 class="text-5xl xl:text-2xl lg:text-3xl md:text-5xl sm:text-2xl">
+                Logo Design
+              </h1>
+              <p class="xl:text-sm lg:text-sm md:pt-8 md:text-xl sm:pt-0 sm:text-sm">
+                I am logo designer. You can make logo by me like Company,
+                education, T-shirt Etc. You can hire me for this job
+              </p>
+            </div>
+          </div>
+          <!-- single workship  -->
+          <div class="singleWorkship group relative">
+            <div class="singleWorkshipPicture">
+              <img src="./image/workship/gmc-expert.jpg" alt="" />
+            </div>
+            <div
+              class="singleWorkshipDetails absolute inset-0 space-y-6 bg-[#3333339c] p-5 text-center text-white opacity-0 backdrop-blur transition duration-200 group-hover:opacity-100 xl:space-y-0 xl:p-1 md:space-y-2 md:p-3">
+              <span class="text-left text-5xl xl:text-3xl lg:text-3xl md:text-5xl sm:text-xl"><i
+                  class="fa-brands fa-google-wallet"></i></span>
+              <h1 class="text-5xl xl:text-2xl lg:text-3xl md:text-5xl sm:text-2xl">
+                GMC Expert
+              </h1>
+              <p class="xl:text-sm lg:text-sm md:pt-8 md:text-xl sm:pt-0 sm:text-sm">
+                I am little bit GMC expert. Especially fix error, I can fix
+                error for the certain time. So you can hire me for this
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- my worship end -->
+  <!-- about me  -->
+  <section id="about">
+    <div class="bg-ice dark:bg-[#1f2235e6]">
+      <div class="mx-auto w-9/12 space-y-5 py-20 lg:w-full lg:px-10 sm:w-full sm:px-3">
+        <!-- main title  -->
+        <div class="mainTitle mb-10 space-y-4 text-center text-tprimary dark:text-white">
+          <h1 class="align-super text-5xl">About Me</h1>
+          <p class="align-super text-xl">
+            Here are all my basic details. Take a look
+          </p>
+        </div>
+        <!-- about wrapper  -->
+        <div class="aboutWrappper flex items-center justify-between">
+          <div class="aboutPicture pr-10 xl:w-96 lg:hidden sm:pl-5">
+            <img src="./image/about_pic.png" class="rounded-2xl border-transparent xl:w-full" />
+          </div>
+          <div class="aboutInfoWrap space-y-8 border-l-8 border-tprimary pl-10 dark:border-ice dark:text-ice sm:pl-5">
+            <div class="aboutMe space-y-2">
+              <h1 class="text-5xl xs:text-3xl">Tushar Imran</h1>
+              <p class="xs:text-md text-xl">
+                Hi, My name is Tushar Imran . I am a Professional Web & UI /
+                UX Designer. <br />
+                I am working this sector last 2 Year . Still I am learning How
+                <br />
+                to make awesome creative design .
+              </p>
+            </div>
+            <div class="aboutMeDetails grid grid-cols-2 gap-7 gap-x-20 md:grid-cols-1">
+              <div class="birthday text-xl">
+                <span><i class="fa-solid fa-cake-candles"></i></span>
+                <b>Birthday: </b>
+                <span class="dark:text-white">08 / 05 / 2003 </span>
+              </div>
+              <div class="location text-xl">
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <b>Location :</b>
+                <span class="dark:text-white">
+                  Meghna, Comilla, Bangladesh</span>
+              </div>
+              <div class="study text-xl">
+                <span><i class="fa-solid fa-school"></i></span>
+                <b>Study :</b>
+                <span class="dark:text-white">Adhyapak Abdul Majid College,
+                </span>
+              </div>
+              <div class="phone text-xl">
+                <span><i class="fa-solid fa-mobile-screen-button"></i></span>
+                <b>Phone :</b>
+                <span class="dark:text-white">01863573951</span>
+              </div>
+              <div class="age text-xl">
+                <span><i class="fa-regular fa-calendar"></i></span>
+                <b>Age :</b>
+                <span class="dark:text-white">18</span>
+              </div>
+              <div class="interest text-xl">
+                <span><i class="fa-solid fa-dice-d20"></i></span>
+                <b>Interest :</b>
+                <span class="dark:text-white"> Coding & Traveler </span>
+              </div>
+              <div class="work text-xl">
+                <span><i class="fa-solid fa-graduation-cap"></i></span>
+                <b>Work :</b>
+                <span class="dark:text-white">Student</span>
+              </div>
+              <div class="mail text-xl">
+                <span><i class="fa-regular fa-envelope-open"></i></span>
+                <b>E-mail :</b>
+                <span class="dark:text-white">itushar941@gamil.com </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- about wrapper end -->
+      </div>
+    </div>
+  </section>
+  <!-- about me end -->
+  <!-- skill  -->
+  <section id="skill">
+    <div class="bg-primary dark:bg-primary-dark">
+      <div class="mx-auto w-9/12 space-y-5 py-20 lg:w-full lg:px-10 sm:w-full sm:px-3">
+        <!-- main title  -->
+        <div class="mainTitle mb-10 space-y-4 text-center text-white">
+          <h1 class="align-super text-5xl">Skill</h1>
+          <p class="align-super text-xl">
+            Here is a list of all my skills. Take a look
+          </p>
+        </div>
+        <div class="skillWrapper grid grid-cols-2 gap-8 md:grid-cols-1">
+          <div class="skillPicture group relative items-center justify-center bg-cover md:flex">
+            <img src="./image/about_pic.png" alt="" />
+            <div
+              class="absolute inset-0 space-y-3 bg-[#5252528f] p-8 text-justify text-xl leading-10 text-white opacity-0 backdrop-blur-2xl transition group-hover:opacity-100 xl:text-xl md:p-1 md:text-xl md:leading-10 sm:p-1 sm:text-xs">
+              <p>
+                Hi, My name is Tushar Imran . I am a Professional Web & UI /
+                UX Designer. I am working this sector last 3 Year . Still I am
+                learning How to make awesome creative design . Always I keep
+                an eye on my client’s wishes not only money. I always make
+                products that look very attractive, clean and professional
+                Which is great for you. My designs are based on innovation &
+                modern techniques. Trust my skills and hope you will get the
+                best designs. Love to work and want to make my clients happy.
+                If you have any new idea please message me before order Thank
+                You
+              </p>
+              <div class="resumeBtn">
+                <a href="#"
+                  class="cursor-pointer border border-ice bg-gradient-to-r from-[#ff9090] to-[#6b6bff] px-8 py-2 text-center text-xl uppercase text-white transition hover:bg-gradient-to-l">Download
+                  Resume</a>
+              </div>
+            </div>
+          </div>
+          <div class="skillRange space-y-8">
+            <div
+              class="html relative flex h-8 items-center justify-between rounded-2xl bg-ice from-[#ff9090] to-[#6b6bff] p-1 px-2 before:absolute before:h-full before:w-[85%] before:rounded-2xl before:bg-gradient-to-r before:content-['']">
+              <b class="absolute left-0 rounded-2xl bg-[#666] p-1 px-5 text-ice">HTML</b>
+              <b class="absolute right-3 text-tprimary">85%</b>
+            </div>
+            <div
+              class="html relative flex h-8 items-center justify-between rounded-2xl bg-ice from-[#ff9090] to-[#6b6bff] p-1 px-2 before:absolute before:h-full before:w-[80%] before:rounded-2xl before:bg-gradient-to-r before:content-['']">
+              <b class="absolute left-0 rounded-2xl bg-[#666] p-1 px-5 text-ice">CSS</b>
+              <b class="absolute right-3 text-tprimary">80%</b>
+            </div>
+            <div
+              class="html relative flex h-8 items-center justify-between rounded-2xl bg-ice from-[#ff9090] to-[#6b6bff] p-1 px-2 before:absolute before:h-full before:w-[75%] before:rounded-2xl before:bg-gradient-to-r before:content-['']">
+              <b class="absolute left-0 rounded-2xl bg-[#666] p-1 px-5 text-ice">Bootstrap</b>
+              <b class="absolute right-3 text-tprimary">75%</b>
+            </div>
+            <div
+              class="html relative flex h-8 items-center justify-between rounded-2xl bg-ice from-[#ff9090] to-[#6b6bff] p-1 px-2 before:absolute before:h-full before:w-[78%] before:rounded-2xl before:bg-gradient-to-r before:content-['']">
+              <b class="absolute left-0 rounded-2xl bg-[#666] p-1 px-5 text-ice">Tailwind</b>
+              <b class="absolute right-3 text-tprimary">78%</b>
+            </div>
+            <div
+              class="html relative flex h-8 items-center justify-between rounded-2xl bg-ice from-[#ff9090] to-[#6b6bff] p-1 px-2 before:absolute before:h-full before:w-[73%] before:rounded-2xl before:bg-gradient-to-r before:content-['']">
+              <b class="absolute left-0 rounded-2xl bg-[#666] p-1 px-5 text-ice">JavaScript</b>
+              <b class="absolute right-3 text-tprimary">73%</b>
+            </div>
+            <div
+              class="html relative flex h-8 items-center justify-between rounded-2xl bg-ice from-[#ff9090] to-[#6b6bff] p-1 px-2 before:absolute before:h-full before:w-[70%] before:rounded-2xl before:bg-gradient-to-r before:content-['']">
+              <b class="absolute left-0 rounded-2xl bg-[#666] p-1 px-5 text-ice">Video Editing</b>
+              <b class="absolute right-3 text-tprimary">70%</b>
+            </div>
+            <div
+              class="html relative flex h-8 items-center justify-between rounded-2xl bg-ice from-[#ff9090] to-[#6b6bff] p-1 px-2 before:absolute before:h-full before:w-[55%] before:rounded-2xl before:bg-gradient-to-r before:content-['']">
+              <b class="absolute left-0 rounded-2xl bg-[#666] p-1 px-5 text-ice">Logo Design</b>
+              <b class="absolute right-3 text-tprimary">55%</b>
+            </div>
+            <div
+              class="html relative flex h-8 items-center justify-between rounded-2xl bg-ice from-[#ff9090] to-[#6b6bff] p-1 px-2 before:absolute before:h-full before:w-[45%] before:rounded-2xl before:bg-gradient-to-r before:content-['']">
+              <b class="absolute left-0 rounded-2xl bg-[#666] p-1 px-5 text-ice">GMC</b>
+              <b class="absolute right-3 text-tprimary">45%</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- skill end -->
+  <!-- portfolio -->
+  <section id="portfolio">
+    <div class="bg-ice dark:bg-[#1f2235e6]">
+      <div class="mx-auto w-9/12 space-y-5 py-20 lg:w-full lg:px-10 sm:w-full sm:px-3">
+        <!-- main title  -->
+        <div class="mainTitle mb-10 space-y-4 text-center text-tprimary dark:text-white">
+          <h1 class="align-super text-5xl">Portfolio</h1>
+          <p class="align-super text-xl">
+            Here are all the templates I created. Click to live preview
+          </p>
+        </div>
+        <div class="portfolioWrap"></div>
+      </div>
+    </div>
+  </section>
+  <!-- portfolio end -->
+  <!-- contact  -->
+  <section id="contact">
+    <div class="bg-primary dark:bg-primary-dark">
+      <div class="mx-auto w-9/12 space-y-5 py-20 lg:w-full lg:px-10 sm:w-full sm:px-3">
+        <!-- main title  -->
+        <div class="mainTitle mb-10 space-y-4 text-center text-white">
+          <h1 class="align-super text-5xl">Contact</h1>
+          <p class="align-super text-xl">
+            You can send me a message from here. I will try to communicate
+            very quickly
+          </p>
+        </div>
+        <div class="contactWrap mx-auto w-3/5 xl:w-3/4 md:w-full">
+          <!-- <div class="contactPicture">
+            <div class="relative overflow-hidden">
+              <img src="./image/myProfile.jpg" class="transition duration-500"/>
+              <div class="realContackIcon absolute space-x-4 text-5xl">
+                <a title="Google Mail" href="#"><i class="bg-gradient-to-b from-[#4285F4] via-[#EA4335] to-[#34A853] p-2 w-10 h-10 rounded-full text-white fa-solid fa-envelope-open-text"></i></a>
+                <a title="Whats App" href="#"><i class="bg-[#2AC44D] text-white p-2 w-10 h-10 rounded-full fa-brands fa-whatsapp"></i></a>
+                <a title="Messenger" href="#"><i class="text-white p-2 w-10 h-10 rounded-full bg-gradient-to-b from-[#148CFF] to-[#FF547D] fa-brands fa-facebook-messenger"></i></a>
+                <a title="Zoom Viedo Confarence" href="#"><i class="bg-[#438AFC] text-white p-2 w-10 h-10 rounded-full fa-solid fa-video"></i></a>
+              </div>
+            </div>
+          </div> -->
+          <div class="contactInput">
+            <form
+              action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdw_dy3nbTnsUXM8CQTic0rBJFbY1IsQ4FuUgxqzB1xIKkhRg/formResponse"
+              method="post" class="grid grid-cols-1 gap-y-5">
+              <div class="relative">
+                <label for="fullName relative">
+                  <span class="absolute top-3 left-3 text-[#777] dark:text-white"><i
+                      class="fa-solid fa-user"></i></span>
+                  <input type="text" id="name" placeholder="name" name="entry.645276520" required
+                    class="w-full border border-[#999] bg-ice py-2 pl-10 pr-2 text-xl outline-none dark:bg-[#acacac82] dark:text-white" />
+                </label>
+              </div>
+
+              <div class="relative">
+                <label for="email relative">
+                  <span class="absolute top-3 left-3 text-[#777] dark:text-white"><i
+                      class="fa-solid fa-envelope"></i></span>
+                  <input type="email" id="email" placeholder="email" name="entry.1785653250" required
+                    class="w-full border border-[#999] bg-ice py-2 pl-10 pr-2 text-xl outline-none dark:bg-[#acacac82] dark:text-white" />
+                </label>
+              </div>
+
+              <div class="relative">
+                <label for="number relative">
+                  <span class="absolute top-3 left-3 text-[#777] dark:text-white"><i
+                      class="fa-solid fa-mobile"></i></span>
+                  <input type="number" id="number" placeholder="number" name="entry.1307317913" required
+                    class="w-full border border-[#999] bg-ice py-2 pl-10 pr-2 text-xl outline-none dark:bg-[#acacac82] dark:text-white" />
+                </label>
+              </div>
+
+              <div class="relative h-80">
+                <label for="opinion relative">
+                  <span class="absolute top-3 left-3 text-[#777] dark:text-white"><i
+                      class="fa-solid fa-pen-to-square"></i></span>
+                  <textarea type="text" id="comment" placeholder="Write your opinion" name="entry.805109104" required
+                    class="h-full w-full border border-[#999] bg-ice py-2 pl-10 pr-2 text-xl outline-none dark:bg-[#acacac82] dark:text-white"></textarea>
+                </label>
+              </div>
+              <div class="relative">
+                <label for="submit">
+                  <input type="submit" id="submitBtn" value="Submit"
+                    class="cursor-pointer border border-ice bg-gradient-to-r from-[#ff9090] to-[#6b6bff] px-8 py-2 text-xl uppercase text-white transition hover:bg-gradient-to-l" />
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact end -->
+  <!-- footer  -->
+  <footer>
+    <div class="bg-ice dark:bg-[#1f2235e6]">
+      <div class="mx-auto w-9/12 space-y-5 pt-20 pb-7 lg:w-full lg:px-10 sm:w-full sm:px-3">
+        <!-- main title  -->
+        <div class="mainTitle mb-10 space-y-4 text-center text-tprimary dark:text-white">
+          <h1 class="align-super text-5xl">ICE ImraN</h1>
+          <p class="align-super text-xl">
+            Yeah ! All time I am ready for yours Order.So you can also contact
+            me here
+          </p>
+        </div>
+        <div class="footerWrap border-b border-[gray]">
+          <div class="footerIcon space-x-5 pb-8 text-center text-5xl sm:text-4xl">
+            <a href="https://www.facebook.com/profile.php?id=100009068730323" target="_blank" style="color: #3b5998"><i
+                class="fab fa-facebook transition hover:scale-90"></i></a>
+            <a href="https://www.instagram.com/ice_imran/" target="_blank" style="color: #d33e82"><i
+                class="fab fa-instagram-square transition hover:scale-90"></i></a>
+            <a href="https://twitter.com/AkterRasme" target="_blank" style="color: #55acee"><i
+                class="fab fa-twitter-square transition hover:scale-90"></i></a>
+            <a href="https://dribbble.com/raakstmeer" target="_blank" style="color: #ea4c89"><i
+                class="fab fa-dribbble-square transition hover:scale-90"></i></a>
+            <a href="https://www.fiverr.com/raakstmeer" target="_blank" style="color: #ea4335"><i
+                class="fab fa-freebsd transition hover:scale-90"></i></a>
+          </div>
+        </div>
+        <div class="copyright text-center text-[#c2c2c2]">
+          <p>Copyright © 2020 ICE ImraN . Designed by SNOW</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+  <!-- go to top -->
+  <div
+    class="gototop invisible fixed right-5 bottom-5 z-50 flex h-10 w-10 items-center justify-center bg-[#515566] p-1 text-white opacity-0 transition duration-200">
+    <a href="#header" class="translate-y-1"><i class="fa-solid fa-up-long"></i></a>
+  </div>
+  <!-- go to top end -->
+
+  <script src="./fontawesome/js/all.js"></script>
+  <script src="./fontawesome/js/all.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
